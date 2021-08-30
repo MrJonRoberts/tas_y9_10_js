@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu');
+
+body {
+    background-color: #1C1F26;
+    color: #9FB0BF;
+    font-family: 'Ubuntu', sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav {
+    width: 100%;
+    background-color: #424A59;
+}
+
+nav a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 25px;
+    color: #69758C;
+    font-size: 14px;
+  
+  vertical-align: middle;
+  line-height: normal;
+}
+
+nav a:hover {
+    background-color: #1C1F26;
+    color:  #424A59;
+}
