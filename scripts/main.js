@@ -48,17 +48,18 @@ function btnClicked(){
     score = score + 1;   // score ++;
     msgElt.innerHTML = score;
 
-    if (isBlue === true){
-        h2Elt.classList.remove("blue");
-        h2Elt.classList.add("red");
-        isBlue = false;
-    } else if ( isBlue === false){
-        h2Elt.classList.remove("red");
-        h2Elt.classList.add("blue");
-        isBlue = true;
+    h2Elt.className = '';
+    if (score <= 6){
+        h2Elt.classList.add("c1");
+    } else if (score <= 12) {
+        h2Elt.classList.add("c2");
+    } else if (score <= 18) {
+        h2Elt.classList.add("c3");
+    } else if (score <= 24) {
+        h2Elt.classList.add("c4");
+    } else  {
+        h2Elt.classList.add("c5");
     }
-
-
 
 }
 
