@@ -47,6 +47,8 @@ function btnClicked(){
     msgElt.innerHTML = score;
 }
 
-btnElt = document.getElementById("btnCC");
-btnElt.addEventListener("click", btnClicked);
+// btnElt = document.getElementById("btnCC");
+// btnElt.addEventListener("click", btnClicked);
+imgElt = document.getElementById("imgBtn");
+imgElt.addEventListener("click", btnClicked);
 

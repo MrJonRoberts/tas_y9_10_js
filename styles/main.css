@@ -28,3 +28,22 @@ nav a:hover {
     background-color: #1C1F26;
     color:  #424A59;
 }
+.content {
+    text-align: center;
+}
+
+#btnCC {
+    text-align: center;
+    width: 70%;
+    background-color: #424A59;
+    color: #9FB0BF;
+    height: 80px;
+    border-radius: 10px;
+    border: 0;
+    box-shadow: 2px 2px aliceblue;
+}
+
+#btnCC:hover {
+    background-color: #9FB0BF;
+    color: #424A59;
+}
