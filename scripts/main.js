@@ -30,3 +30,11 @@ var tempInDegC = 28.5;
 
 // create a boolean:
 var isItRaining = true;   // in python Booleans are True / False.
+
+// hello fred, with 2 eyes, today is tuesday and it is 28.5 deg C and you are 21 years old.
+
+let text = "Hello "+ name + ", with "+ numberOfEyes + " eyes, today is "+
+    dayOfWeek + " and it is "+ tempInDegC + " deg C and you are "+ age + " years old.";
+
+console.log(text);
+msgElt.innerHTML = text;
