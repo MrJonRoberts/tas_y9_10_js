@@ -16,9 +16,9 @@ msgElt.innerHTML = "<h2>JS is Working!!!</h2>";
 // variables
 // PYTHON :    name = "Fred"
 
-let name = "Fred";   // constant - cannot change the value
+const name = "Fred";   // constant - cannot change the value
 var age = 21;
-
+//  name = "Joe"  error
 // create a string
 var dayOfWeek = "Tuesday";  // a bunch of characters inside quotes.
 
@@ -33,7 +33,7 @@ var isItRaining = true;   // in python Booleans are True / False.
 
 // hello fred, with 2 eyes, today is tuesday and it is 28.5 deg C and you are 21 years old.
 
-let text = "Hello "+ name + ", with "+ numberOfEyes + " eyes, today is "+
+const text = "Hello "+ name + ", with "+ numberOfEyes + " eyes, today is "+
     dayOfWeek + " and it is "+ tempInDegC + " deg C and you are "+ age + " years old.";
 
 console.log(text);
@@ -47,8 +47,8 @@ function btnClicked(){
     msgElt.innerHTML = score;
 }
 
-// btnElt = document.getElementById("btnCC");
-// btnElt.addEventListener("click", btnClicked);
+btnElt = document.getElementById("btnCC");
+btnElt.addEventListener("click", btnClicked);
 imgElt = document.getElementById("imgBtn");
 imgElt.addEventListener("click", btnClicked);
 
