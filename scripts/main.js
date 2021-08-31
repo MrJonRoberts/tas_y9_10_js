@@ -42,9 +42,24 @@ msgElt.innerHTML = text;
 // button code
 var score = 0;
 
+var isBlue = true;
+
 function btnClicked(){
     score = score + 1;   // score ++;
     msgElt.innerHTML = score;
+
+    if (isBlue === true){
+        h2Elt.classList.remove("blue");
+        h2Elt.classList.add("red");
+        isBlue = false;
+    } else if ( isBlue === false){
+        h2Elt.classList.remove("red");
+        h2Elt.classList.add("blue");
+        isBlue = true;
+    }
+
+
+
 }
 
 btnElt = document.getElementById("btnCC");
@@ -52,3 +67,8 @@ btnElt.addEventListener("click", btnClicked);
 imgElt = document.getElementById("imgBtn");
 imgElt.addEventListener("click", btnClicked);
 
+// conditionals.
+
+var h2Elt = document.getElementById("allContentHeader");
+
+h2Elt.classList.add("blue");
