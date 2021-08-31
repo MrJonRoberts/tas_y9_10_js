@@ -38,3 +38,15 @@ let text = "Hello "+ name + ", with "+ numberOfEyes + " eyes, today is "+
 
 console.log(text);
 msgElt.innerHTML = text;
+
+// button code
+var score = 0;
+
+function btnClicked(){
+    score = score + 1;   // score ++;
+    msgElt.innerHTML = score;
+}
+
+btnElt = document.getElementById("btnCC");
+btnElt.addEventListener("click", btnClicked);
+
