@@ -78,3 +78,7 @@ nav a:hover {
     background-color: #E7E2F5;
 }
 
+.form_content {
+    padding-left: 25px;
+    text-align: justify;
+}

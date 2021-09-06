@@ -1,0 +1,67 @@
+<html>
+<head>
+  <title>Javascript</title>
+  <link type="text/css" rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+<nav>
+  <a href="index.html">HOME</a>
+</nav>
+
+<div class='form_content'>
+  <h1>INPUT PAGE</h1>
+  <h2>Text</h2>
+  <form>
+  <label for="username">Username:</label><br>
+  <input type="text" id="username" name="username"><br>
+  <label for="pwd">Password:</label><br>
+  <input type="password" id="pwd" name="pwd">
+
+  <hr/>
+  <h2>Select</h2>
+  <label for="cars">Choose a car:</label>
+  <select id="cars" name="cars">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="fiat">Fiat</option>
+    <option value="audi">Audi</option>
+  </select>
+  <hr/>
+  <h2>Radio</h2>
+  <input type="radio" id="html" name="fav_language" value="HTML">
+  <label for="html">HTML</label><br>
+  <input type="radio" id="css" name="fav_language" value="CSS">
+  <label for="css">CSS</label><br>
+  <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+  <label for="javascript">JavaScript</label><br>
+  <hr/>
+  <h2>Checkbox</h2>
+  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+  <label for="vehicle1"> I have a bike</label><br>
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+  <label for="vehicle2"> I have a car</label><br>
+  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+  <label for="vehicle3"> I have a boat</label>
+  <hr/>
+  <h2>Date</h2>
+  <label for="birthday">Birthday:</label>
+  <input type="date" id="birthday" name="birthday">
+  <hr/>
+  <h2>Range</h2>
+  <label for="vol">Volume (between 0 and 50):</label>
+  <input type="range" id="vol" name="vol" min="0" max="50">
+  <hr/>
+  <h2>Colour</h2>
+  <label for="favcolor">Select your favorite color:</label>
+  <input type="color" id="favcolor" name="favcolor">
+  <h2>Buttons</h2>
+
+  <input type="submit" value="Submit">
+  <input type="reset">
+  <button>Button</button>
+  </form>
+</div>
+<div class='msg' id='msg'></div>
+<script src="scripts/input.js"></script>
+</body>
+</html>
